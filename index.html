@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nectar</title>
+
+  <link id="stylecss" type="text/css" rel="stylesheet" href="style.css?t=?= filemtime"(style.css);>
+  
+  <script>
+    // Determine current section and changes colour in nav bar 
+    window.onscroll = function() {
+      console.clear();
+      console.log("Win Y: " + window.scrollY);
+      var navlinks = document.getElementsByTagName("ul")[0].getElementsByTagName("a");
+
+      console.log(navlinks);
+
+      var articles = document.getElementsByTagName("main")[0].getElementsByTagName("article");
+
+      console.log(articles);
+
+      for (var a = 0; a < articles.length; a++) {
+        var arTop = articles[a].offsetTop - 1;
+        var arBot = articles[a].offsetTop + articles[a].offsetHeight - 1;
+
+        console.log(arTop);
+        console.log(arBot);
+
+        if (window.scrollY >= arTop && window.scrollY < arBot) {
+          console.log(articles[a].id + ": current");
+          navlinks[a].classList.add("current");
+        } else {
+          console.log(articles[a].id + ":");
+          navlinks[a].classList.remove("current");
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="index-header">
+    <div class="title-screen">
+      <img src="./img/nectarLogo.png" class="nectar-img">
+    </div>
+  </header>
+
+  <!-- Set navbar and internal navigation links -->
+  <nav class="nav-bar">
+    <a href="index.html"> <img class="mini-nectar-icon" src="./img/nectarLogo.png"></a>
+    <ul class="nav-ul">
+      <li class="nav-li">
+        <a class="nav-text" href="index.html#ourstory">our story</a>
+      </li>
+      <li class="nav-li">
+        <a class="nav-text" href="index.html#locations">locations</a>
+      </li>
+      <li class="nav-li">
+        <a class="nav-text" href="index.html#products">products</a>
+      </li>
+      <li class="nav-li">
+        <a class="nav-text" href="index.html#contactus">contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <article id="ourstoryArticle">
+      <section class="our-story main-section" id="ourstory">
+        <div class="main-header">
+          <h1 class="header-text">our story</h1>
+          <hr class="dot-hr">
+        </div>
+        <div class="ourstory-content">
+          <div class="info-container-right info-container">
+            <div class="img-container-left">
+              <img src="./img/ourstory1.jpg" alt="map of Australia" class="ourstory-img">
+            </div>
+            <div class="content-container">
+              <div class="content-text">
+                <h3 class="ourstory-h3"><b>Welcome to nectar!</b></h3>
+                <p class="square-text">Introducing nectar drinks, the perfect balance of refreshing taste with just a touch of sweetness. Crafted for social occasions, these bubbly delights are sure to elevate any gathering. Infused with hemp extract and adaptogens, they offer a unique blend that promotes a calm state of mind. Produced in Margaret River, WA, the anticipation is building as the launch in supermarkets and cafes across Western Australia draws near.</p>
+              </div>
+              <!-- Button to internally navigate to products -->
+              <a href="#products" class="ourstory-btn btn-right">View Products</a>
+            </div>
+            <br class="clear">
+          </div>
+          <div class="info-container-left info-container">
+            <div class="img-container-right">
+              <img src="./img/ourstory2.jpg" alt="locations" class="ourstory-img">
+            </div>
+            <div class="content-container">
+              <div class="content-text">
+                <h3 class="ourstory-h3"><b>The wait is almost over!</b></h3>
+                <p class="square-text">nectar drinks have undergone meticulous refinement, ensuring a taste that exceeds perfection. Immerse yourself in the captivating branding and flawlessly designed packaging that adds a touch of elegance to every sip. With confirmed stockists eagerly awaiting, the buzz around these extraordinary beverages continues to grow. Now, the final piece of the puzzle is here: the unveiling of our website!</p>
+              </div>
+              <!-- Button to internally navigate to locations -->
+              <a href="#locations" class="ourstory-btn btn-left">View Locations</a>
+            </div>
+            <br class="clear">
+          </div>
+          <div class="info-container-right info-container">
+            <div class="img-container-left">
+              <img src="./img/ourstory3.jpg" alt="dolby" class="ourstory-img">
+            </div>
+            <div class="content-container">
+              <div class="content-text">
+                <h3 class="ourstory-h3"><b>Unleash the Extraordinary!</b></h3>
+                <p class="square-text">Indulge in a captivating journey where extraordinary taste meets tranquility. Explore our enticing range of flavors, meticulously crafted to tantalize your senses and elevate your beverage experience to new heights. Discover the remarkable benefits of our unique blend, infused with hemp extract and adaptogens, carefully selected to promote a sense of calm and well-being. With our website now live, immerse yourself in the ultimate fusion of taste, serenity, and convenience, all at your fingertips. Unleash the full potential of nectar drinks and embrace a lifestyle of extraordinary enjoyment. Start your nectar experience today!</p>
+              </div>
+              <!-- Button to external link to view negatives of sugary drinks -->
+              <a href="https://www.cdc.gov/healthyweight/healthy_eating/drinks.html" class="ourstory-btn btn-right">View Negatives of Sugary Drinks (CDC)</a>
+            </div>
+            <br class="clear">
+          </div>
+        </div>
+      </section>
+    </article>
+    <article id="productsArticle">
+      <section class="products main-section" id="products">
+        <div class="main-header">
+          <h1 class="header-text">products</h1>
+          <hr class="dot-hr">
+        </div>
+        <div class="panels">
+          <div class="panel">
+          <div class="panel-content">
+            <div class="panel-front">
+              <img src="./img/nectardrink1.1.jpg" alt="Cherry Drink" class="panel-img">
+            </div>
+            <div class="panel-back">
+              <div class="panel-back-text">
+                <h3>Strawberry Bliss</h3>
+                <p class="descrip-text">A delicious and refreshing drink made with ripe strawberries. It's a sweet and tangy beverage that's perfect for quenching your thirst and enjoying the natural goodness of strawberries. Sip on Strawberry Bliss for a burst of fruity flavor and a refreshing pick-me-up. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-content">               
+            <div class="panel-front">
+              <img src="./img/nectardrink3.1.jpg" alt="Cherry Drink" class="panel-img">
+            </div>
+            <div class="panel-back">
+              <div class="panel-back-text">
+                <h3>Crimson Orange Burst</h3>
+                <p class="descrip-text">A bright and refreshing drink that combines the tangy flavor of oranges with the sweetness of red fruits. With its vibrant red color and invigorating citrus taste, this drink is a delicious and revitalizing treat. It's perfect for quenching your thirst and adding a burst of fruity goodness to your day. Enjoy the refreshing sensation of Crimson Citrus Burst and let its vibrant flavors awaken your senses.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-content">                
+            <div class="panel-front">
+              <img src="./img/nectardrink4.1.jpg" alt="Cherry Drink" class="panel-img">
+            </div>
+            <div class="panel-back">
+              <div class="panel-back-text">
+                <h3>Berry Royale</h3>
+                <p class="descrip-text">A delicious fruit juice bursting with the flavors of mixed berries. This vibrant purple drink is a refreshing treat that combines sweet and tangy notes in every sip. With its captivating color and irresistible taste, Purple Bliss is the perfect thirst-quencher for any occasion. Indulge in the fruity goodness and enjoy the delightful experience of this vibrant purple fruit juice.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-content">                 
+            <div class="panel-front">
+              <img src="./img/nectardrink2.1.jpg" alt="Cherry Drink" class="panel-img">
+            </div>
+            <div class="panel-back">
+              <div class="panel-back-text">
+                <h3>Crisp Cucumber Splash</h3>
+                <p class="descrip-text">A combination of the cool and crisp essence of freshly picked cucumbers with a subtle twist of zesty lime, creating a harmonious blend of flavors. Sip on this revitalizing elixir and let the natural goodness of cucumbers hydrate and rejuvenate your body. Whether you're seeking a moment of relaxation or a burst of energy, this vibrant green drink is the perfect companion to uplift your spirits and invigorate your senses. Take a sip and immerse yourself in the revitalizing symphony of flavors that will leave you feeling refreshed and revitalized.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>    
+    <article id="locationsArticle">
+      <section class="locations main-section" id="locations">
+        <div class="main-header">
+          <h1 class="header-text">locations</h1>
+          <hr class="dot-hr">
+        </div>
+        <div class="locations-content">
+          <div class="location-card">
+            <div class="location-img-div">
+              <div class="image-slider">
+                <img src="./img/locations2.jpg" alt="Woolworths">
+                <img src="./img/locations3.jpg" alt="Costco">
+                <img src="./img/locations4.jpg" alt="Coles">
+                <img src="./img/locations5.jpg" alt="Kmart">
+              </div>
+            </div>
+            <div>
+              <h3 class="locations-h3"><em>stores</em></h3>
+              <table class="stores-table">
+                <p>we will be supplied in</p>
+                <!-- Creates table for location names -->
+                <tr>
+                  <td>Coles</td>
+                  <td>Costco</td>
+                </tr>
+                <tr>
+                  <td>Kmart</td>
+                  <td>Woolies</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="location-card">
+            <div class="location-img-div">
+              <img class="location-img" src="./img/locations1.jpg" alt="first-class">
+            </div>
+            <div>
+              <h3 class="locations-h3">cafes</h3>
+              <p>We will be located in select cafes across Western Australia!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+      <!-- Create form for contact us section -->
+    <article id="contactUsArticle">
+      <section class="contactus main-section" id="contactus">
+        <div class="main-header">
+          <h1 class="header-text">contact us</h1>
+          <hr class="dot-hr">
+          <form action="index.html" method="POST">
+            <!-- Set names and required fields -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Submit">
+          </form>        
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+<footer>
+</footer>
+</html>

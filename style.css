@@ -1,0 +1,594 @@
+/* Set smooth scrolling behavior for HTML element */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset default margin and padding for body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for h1 heading */
+h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    text-shadow: 0.5px -0.5px 15px white, -0.5px 0.5px 15px white;
+    color: black;
+    font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+}
+
+/* Styling for h2, h3, h4, and h5 headings */
+h2, h3, h4, h5 {
+    color: black;
+    font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+}
+
+/* Styling for paragraphs and labels */
+p, label {
+    color: black;
+    font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+}
+
+/* Styling for labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styling for header element */
+header {
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/homepagebg.jpg'); 
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Styling for table header and data cells */
+th, td {
+    border: 0.1px solid #c0eaf4;
+    color: white;
+}
+
+/* Styling for table header cells */
+th {
+    background-color: #7ebfcd;
+}
+
+/* Styling for footer element */
+footer {
+    align-items: center;
+    background-color: black;
+    border-top: 0.1px solid gray;
+    display: flex;
+    justify-content: center;
+    min-height: 15vh;
+}
+
+/* Styling for index page header */
+.index-header {
+    min-height: 93vh;
+}
+
+/* Styling for square-shaped text containers */
+.square-text {
+    text-align: justify;
+    word-spacing: -1.5px;
+}
+
+/* Styling for dotted horizontal rule */
+.dot-hr {
+    border: dotted white 0.3rem;
+    border-bottom: none;
+    margin: 2rem auto 2rem;
+    width: 10%;
+}
+
+/* Styling for title screen */
+.title-screen {
+    color: white;
+    text-align: center;
+    text-shadow: 0.5px -0.5px 15px gray, -0.5px 0.5px 15px gray;
+}
+
+/* Styling for nectar logo image */
+.nectar-img {
+    text-shadow: 1px -1px 20px white, 1px 1px 20px white;
+    height: 22rem;
+    width: 22rem;
+    border-radius:50%;
+    border: 2px solid white;
+}
+
+/* Styling for nectar text */
+.nectar-text {
+    color: black;
+    font-size: 7rem;
+    font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+}
+
+/* Styling for navigation bar */
+.nav-bar {
+    align-items: center;
+    background-color: black;
+    border-bottom: 0.1px solid white;
+    display: flex;
+    height: 7vh;
+    justify-content: space-between;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Styling for navigation unordered list */
+.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20;
+}
+
+/* Styling for navigation list items */
+.nav-li {
+    display: inline;
+    padding: 2rem;
+}
+
+/* Styling for navigation text */
+.nav-text {
+    color: white;
+    font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Styling for hovered navigation text */
+.nav-text:hover {
+    color: #7ebfcd;
+}
+
+/* Styling for currently active navigation item */
+.current {
+    color: #7ebfcd;
+}
+
+/* Styling for mini nectar icons */
+.mini-nectar-icon {
+    height: 3rem;
+}
+
+/* Styling for main header section */
+.main-header {
+    margin: 5rem auto;
+}
+
+/* Styling for header text */
+.header-text {
+    margin: 0;
+}
+
+/* Styling for main content section */
+.main-section {
+    min-height: 100vh;
+    overflow: auto;
+    text-align: center;
+}
+
+/* Styling for our story section */
+.our-story {
+    background-color: #7ebfcd;
+}
+
+/* Styling for our story content container */
+.ourstory-content {
+    margin: auto auto 5rem auto;
+    width: 55%;
+}
+
+/* Styling for right-aligned info container */
+.info-container-right {
+    border-bottom: 1.5px solid black;
+    border-left: 1.5px solid black;
+}
+
+/* Styling for left-aligned info container */
+.info-container-left {
+    border-bottom: 1.5px solid black;
+    border-left: 1.5px solid black;
+}
+
+/* Styling for info container */
+.info-container {
+    height: auto;
+    padding: 1rem;
+    transition: transform .4s;
+    width: 100%;
+}
+
+/* Styling for hovered info container */
+.info-container:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for heading in our story section */
+.ourstory-h3 {
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+/* Styling for images in our story section */
+.ourstory-img {
+    max-width:100%;
+    max-height: 350px;
+}
+
+/* Styling for left-aligned info container in our story section */
+.info-container-left {
+    margin: 3.5rem 0 3.5rem;
+}
+
+/* Styling for content text */
+.content-text {
+    height:100%;
+}
+
+/* Styling for content container */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Styling for our story button */
+.ourstory-btn {
+    border: 1.5px solid black;
+    color: black;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    margin: 0.75rem auto 0;
+    padding: 0.75rem;
+    text-decoration:none;
+    transition: transform 1s;
+}
+
+/* Styling for hovered our story button */
+.ourstory-btn:hover {
+    border: 3.5px solid #4d4dff;
+    color: #4d4dff;
+    transform: scale(1.05);
+}
+
+/* Styling for clearing floats */
+.clear {
+    clear: both;
+}
+
+/* Styling for products section */
+.products {
+    background-color: #c0eaf4;
+}
+
+/* Styling for panels section */
+.panels {
+    height: 100%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto 5rem;
+    padding: 1rem 2rem 0 2rem;
+    justify-items: center;
+
+}
+
+/* Styling for panel */
+.panel {
+    height: 28rem;
+    perspective: 50rem;
+    text-align: center;
+    width: 17rem;
+}
+
+/* Styling for panel content */
+.panel-content {
+    height: 100%;
+    position:relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+/* Styling for hovered panel content */
+.panel:hover .panel-content {
+    transform: rotateY(180deg);
+}
+
+/* Styling for panel front and back */
+.panel-front, .panel-back {
+    backface-visibility: hidden;
+    border: 1px solid black;
+    box-shadow: 1px 1px 15px black;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+/* Styling for panel image */
+.panel-img{
+    display: block;
+    height:100%;
+    width: 100%;
+}
+
+/* Styling for panel back */
+.panel-back {
+    background-color: #c0eaf4;;
+    transform: rotateY(180deg);
+}
+
+/* Styling for description text */
+.descrip-text {
+    background-color: white;
+    border: 0.5px solid white;
+    border-radius: 1.25rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* Styling for locations section */
+.locations {
+    background-color: #7ebfcd;
+    border-bottom: 0.1px solid gray;
+    border-top: 0.1px solid gray;
+    min-height: 100vh;
+    overflow: auto;
+    text-align: center;
+}
+
+/* Styling for locations content container */
+.locations-content {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto 5rem;
+    width: 60%;
+}
+
+/* Styling for location cards */
+.location-card {
+    background: #7ebfcd;
+    border: 1.5px solid black;
+    border-radius: 30px;
+    box-shadow: 2px 2px 30px black;
+    transition: transform .4s;
+}
+
+/* Styling for hovered location cards */
+.location-card:hover {
+    border: 1.5px solid #c0eaf4;
+    transform: scale(1.1);
+}
+
+/* Styling for location image div */
+.location-img-div {
+    background: #c0eaf4;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* Styling for stores table */
+.stores-table {
+    padding: 0 1rem 1rem 1rem;
+    width: 100%;
+}
+
+/* Styling for location images */
+.location-img {
+    border-bottom: 0.1px solid gray;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: block;
+    height: 20rem;
+    width: 100%;
+}
+
+.image-slider {
+  position: relative;
+  width: 400px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.image-slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: fade 8s infinite;
+}
+
+.image-slider img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.image-slider img:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.image-slider img:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.image-slider img:nth-child(4) {
+  animation-delay: 6s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  
+  20% {
+    opacity: 1;
+  }
+  
+  33% {
+    opacity: 1;
+  }
+  
+  53% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Styling for contact us section */
+.contactus {
+    background-color: #c0eaf4;
+}
+
+/* Styling for contact form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #c0eaf4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Styling for form input and textarea */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #7ebfcd;
+}
+
+/* Styling for textarea */
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Styling for form submit button */
+input[type="submit"] {
+    background-color: #c0eaf4;
+    color: black;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Styling for hovered form submit button */
+input[type="submit"]:hover {
+    background-color: #7ebfcd;
+}
+
+/* Styling for desktop view screen size */
+@media (min-width: 769px) {
+    .info-container-right {
+        text-align: right;
+        padding-right: 2rem;
+    }
+    
+    .info-container-left {
+        text-align: left;
+        padding-left: 2rem;
+    }
+    
+    .img-container-left {
+        float: left;
+        height: 100%;
+        padding-right: 2rem;
+        width: 22rem;
+    }
+    
+    .img-container-right {
+        float: right;
+        height: 100%;
+        padding-left: 2rem;
+        width: 22rem;
+    }
+
+    .btn-right {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    
+    .btn-left {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .locations-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .panels {
+    grid-template-columns: repeat(4, 1fr);
+    }
+
+    .panel {
+        min-height: 34rem;
+    }
+}
+
+/* Styling for tablet view screen size */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nectar-text {
+        font-size: 4.5rem;
+    }
+
+    .nav-ul {
+        padding: 20px;
+    }
+
+    .info-container {
+        padding: 1rem;
+    }
+    .panels {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 10rem 0 10rem;
+    }
+
+    .panel {
+    height: 32rem;
+    }
+}
+
+/* Styling for mobile view screen size */
+@media (min-width: 360px) and (max-width: 640px) {
+    .nectar-text {
+        font-size: 3.5rem;
+    }
+
+    .nav-text {
+        font-size: 14px;
+    }
+    
+    .nav-li {
+        padding: 1rem;
+    }
+
+    .nav-ul {
+        padding: 20px; 
+    }
+}
+
+
+
