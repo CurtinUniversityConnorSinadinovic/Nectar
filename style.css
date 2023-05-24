@@ -281,6 +281,7 @@ footer {
 /* Styling for products section */
 .products {
     background-color: #c0eaf4;
+    border-top: black;
 }
 
 /* Styling for panels section */
