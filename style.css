@@ -505,7 +505,7 @@ input[type="submit"]:hover {
 }
 
 /* Styling for desktop view screen size */
-@media (min-width: 1199px) {
+@media (min-width: 1150px) {
     .info-container-right {
         text-align: right;
         padding-right: 2rem;
@@ -553,7 +553,7 @@ input[type="submit"]:hover {
 }
 
 /* Styling for tablet view screen size */
-@media (min-width: 641px) and (max-width: 1198px) {
+@media (min-width: 641px) and (max-width: 1149px) {
     .nectar-text {
         font-size: 4.5rem;
     }
