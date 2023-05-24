@@ -566,6 +566,14 @@ input[type="submit"]:hover {
         padding: 1rem;
         width: 80%;
     }
+
+    .panel {
+    height: 22rem;
+    perspective: 50rem;
+    text-align: center;
+    width: 13rem;
+    }
+
     .location-img {
         width: 300px;
     }
