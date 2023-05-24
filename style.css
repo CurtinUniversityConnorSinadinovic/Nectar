@@ -163,7 +163,12 @@ footer {
 
 /* Styling for mini nectar icons */
 .mini-nectar-icon {
-    height: 3rem;
+    height: 2.5rem;
+    text-shadow: 1px -1px 20px white, 1px 1px 20px white;
+    border-radius:50%;
+    border: 2px solid white;
+    margin-left: 2px;
+    margin-top:1px;
 }
 
 /* Styling for main header section */
@@ -206,6 +211,7 @@ footer {
     border-left: 1.5px solid black;
 }
 
+
 /* Styling for info container */
 .info-container {
     height: auto;
@@ -229,7 +235,6 @@ footer {
 /* Styling for images in our story section */
 .ourstory-img {
     max-width:100%;
-    max-height: 350px;
 }
 
 /* Styling for left-aligned info container in our story section */
@@ -346,14 +351,13 @@ footer {
 /* Styling for locations section */
 .locations {
     background-color: #7ebfcd;
-    border-bottom: 0.1px solid gray;
-    border-top: 0.1px solid gray;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
     min-height: 100vh;
     overflow: auto;
     text-align: center;
 }
 
-/* Styling for locations content container */
 .locations-content {
     display: grid;
     grid-gap: 2rem;
@@ -366,7 +370,6 @@ footer {
 .location-card {
     background: #7ebfcd;
     border: 1.5px solid black;
-    border-radius: 30px;
     box-shadow: 2px 2px 30px black;
     transition: transform .4s;
 }
@@ -380,8 +383,9 @@ footer {
 /* Styling for location image div */
 .location-img-div {
     background: #c0eaf4;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    display:flex;
+    justify-content:center;
+    
 }
 
 /* Styling for stores table */
@@ -391,19 +395,18 @@ footer {
 }
 
 /* Styling for location images */
+
 .location-img {
     border-bottom: 0.1px solid gray;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
     display: block;
     height: 20rem;
-    width: 100%;
+    width: 20rem;
 }
 
 .image-slider {
   position: relative;
-  width: 400px; /* Adjust the width as needed */
-  height: 300px; /* Adjust the height as needed */
+  height: 20rem;
+  width: 20rem;
   overflow: hidden;
 }
 
@@ -474,7 +477,7 @@ input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 8px;
     border-radius: 3px;
-    border: 1px solid #ccc;
+    border: 1.5px solid black;
     margin-bottom: 10px;
     background-color: #7ebfcd;
 }
@@ -490,7 +493,7 @@ input[type="submit"] {
     background-color: #c0eaf4;
     color: black;
     padding: 10px 16px;
-    border: none;
+    border: 1.5px solid black;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -501,7 +504,7 @@ input[type="submit"]:hover {
 }
 
 /* Styling for desktop view screen size */
-@media (min-width: 769px) {
+@media (min-width: 1301px) {
     .info-container-right {
         text-align: right;
         padding-right: 2rem;
@@ -540,7 +543,7 @@ input[type="submit"]:hover {
         grid-template-columns: repeat(2, 1fr);
     }
     .panels {
-    grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .panel {
@@ -549,7 +552,7 @@ input[type="submit"]:hover {
 }
 
 /* Styling for tablet view screen size */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1300px) {
     .nectar-text {
         font-size: 4.5rem;
     }
@@ -560,19 +563,30 @@ input[type="submit"]:hover {
 
     .info-container {
         padding: 1rem;
+        width: 80%;
     }
+    .location-img {
+        width: 300px;
+    }
+
+    .image-slider {
+        width: 300px;
+      }
     .panels {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1rem 10rem 0 10rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem 10rem 0 10rem;
     }
 
     .panel {
-    height: 32rem;
+        height: 32rem;
     }
 }
 
 /* Styling for mobile view screen size */
-@media (min-width: 360px) and (max-width: 640px) {
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4.5rem;
+    }
     .nectar-text {
         font-size: 3.5rem;
     }
@@ -582,13 +596,22 @@ input[type="submit"]:hover {
     }
     
     .nav-li {
-        padding: 1rem;
+        padding: 7px;
     }
 
     .nav-ul {
-        padding: 20px; 
+        padding: 5px; 
     }
+    .info-container {
+        padding: 1rem;
+        width: 92%;
+    }
+    
+    .location-img {
+        width: 240px;
+    }
+
+    .image-slider {
+        width: 240px;
+      }
 }
-
-
-
