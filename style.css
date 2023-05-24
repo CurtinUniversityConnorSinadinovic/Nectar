@@ -568,7 +568,7 @@ input[type="submit"]:hover {
     }
 
     .panel {
-    height: 22rem;
+    height: 20rem;
     perspective: 50rem;
     text-align: center;
     width: 13rem;
