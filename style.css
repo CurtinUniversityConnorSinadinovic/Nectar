@@ -469,7 +469,8 @@ form {
     max-width: 400px;
     margin: 0 auto;
     background-color: #c0eaf4;
-    padding: 20px;
+
+    padding-right: 18.67px;    
     border-radius: 5px;
 }
 
@@ -480,7 +481,7 @@ input[type="text"], input[type="email"], textarea {
     border-radius: 3px;
     border: 1.5px solid black;
     margin-bottom: 10px;
-    background-color: #7ebfcd;
+    background-color: #7ebfcd;    
 }
 
 /* Styling for textarea */
