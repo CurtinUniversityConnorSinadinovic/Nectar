@@ -616,6 +616,10 @@ input[type="submit"]:hover {
         padding: 5px; 
     }
     
+    .mini-nectar-icon {
+       height: 1.5rem;
+    }
+    
     .info-container {
         padding: 1rem;
         width: 92%;
